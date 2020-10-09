@@ -1,0 +1,69 @@
+<html><head>
+<script>
+function D(r){
+if (r.stat === "ok") {
+for (var k in r.items) {
+document.write(r.items[k].price)
+document.write(r.items[k].name)
+
+}
+}
+}
+</script>
+<script>
+function E(p){
+if (p.stat === "ok") {
+for (var h in p.items) {
+document.write(p.items[h].name)
+}
+}
+}
+</script>
+</head>
+<body>
+
+3353:
+<form method="post" action="http://ewebcart.com/3353/cart" accept-charset="utf-8">
+<fieldset style="border:0;margin:0;padding:0">Quantity: <input name="quantity" value="1" size="3" /><input type="hidden" name="item_id" value="2" />
+<input type="submit" name="add" value="Add to Cart" />
+</fieldset>
+</form><p>
+<form method="post" action="http://ewebcart.com/3353/cart" accept-charset="utf-8">
+<fieldset style="border:0;margin:0;padding:0">
+Program<br />
+
+<input type="hidden" name="option1.0|Program[#NODISPLAYCART#]" value="Video" /> Video <br />
+<input type="hidden" name="option1.1|Program" value="Manual" /> Manual <br />
+<input type="hidden" name="option1.2|Program" value="Test" /> Test <br />
+<br />Quantity: <input name="quantity" value="1" size="3" /><input type="hidden" name="item_id" value="25" />
+<input type="hidden" name="reset_session" value="1" />
+<input type="submit" name="add" value="Add to Cart" />
+</fieldset>
+</form>
+
+[#NODISPLAYCART#]
+---------------------------------------------------------------
+
+Price of Topsy 2000™ Trash Can: $
+<script src="http://www.ewebcart.com/3353/cart?get_items;item1=1&callback=D&fmt=js"></script>
+<br>
+Replace "item1" value with any ITEM_ID.: <script src="http://www.ewebcart.com/3353/cart?get_items;item1=1&callback=E&fmt=js"></script>
+
+************************************************************************
+Return URL:
+<form method="post" action="http://www.ewebcart.com/1754/cart" accept-charset="utf-8">
+
+<fieldset style="border:0;margin:0;padding:0">Quantity: <input name="quantity" value="1" size="3" /><input type="hidden" value="" id="return_url" name="return" /><input type="hidden" name="item_id" value="63" />
+<input type="submit" name="add" value="Add to Cart" />
+</fieldset>
+</form>
+<br><P><a href="http://www.ewebcart.com/1754/cart?reset_session=1&add&item_id=63">Add to Cart</a>
+<p>http://www.ewebcart.com/3353/cart?reset_session=1
+
+<p><a href="http://www.ewebcart.com/1754/cart?reset_session=1" onclick="window.location.href='http://www.ewebcart.com/1754/cart?add&item_id=63'">Link</a>
+<p><a href="https://www.ewebcart.com/8030/cart?add&item_id=118&option1%7CFlash+GUID=13FE-3E00-0708-C21994459932">8030</a>
+
+***********************************************************************************************************************<br>
+[#NOSHIP#] in ADD TO CART text link:<br>
+<a href="http://www.ewebcart.com/~1932/cgi-bin/cart.cgi?add=1&name=ABCD[NOSHIP]&description=Quote 12345&price=400.00&shipping=FLAT:12.50">Add to Cart</a>
+</body></html>
