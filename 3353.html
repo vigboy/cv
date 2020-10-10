@@ -1,4 +1,5 @@
 <html><head>
+  <meta http-equiv="referer-policy" content="no-referrer-when-downgrade">
 <script>
 function D(r){
 if (r.stat === "ok") {
@@ -24,22 +25,27 @@ document.write(p.items[h].name)
 <div>
   <a href="index.html">Home</a>
   </div>
-<p>With Return: <form method="post" action="http://ewebcart.com/3353/cart" accept-charset="utf-8">
-<fieldset style="border:0;margin:0;padding:0">Quantity: <input name="quantity" value="1" size="3" /><input type="hidden" name="return" value="https://htmlpreview.github.io/?https://github.com/vigboy/cv/blob/master/3353.html" /><input type="hidden" name="item_id" value="2" />
+<p>Without Return: <form method="post" action="http://ewebcart.com/3353/cart" accept-charset="utf-8">
+<fieldset style="border:0;margin:0;padding:0">Quantity: <input name="quantity" value="1" size="3" /><input type="hidden" name="item_id" value="2" />
 <input type="submit" name="add" value="Add to Cart" />
 </fieldset>
   </form></P>
+  <p>Item_id: 6 - <form method="post" action="https://ewebcart.com/3353/cart" accept-charset="utf-8">
+<fieldset style="border:0;margin:0;padding:0">Quantity: <input name="quantity" value="1" size="3" /><input type="hidden" name="item_id" value="6" />
+<input type="submit" name="add" value="Add to Cart" />
+</fieldset>
+</form>
   
   
-  3353:
+  <p>3353: With Return
 <form method="post" action="https://ewebcart.com/3353/cart" accept-charset="utf-8">
 <fieldset style="border:0;margin:0;padding:0">Quantity: <input name="quantity" value="1" size="3" />
   <input type="hidden" value="https://htmlpreview.github.io/?https://github.com/vigboy/cv/blob/master/3353.html" id="return_url" name="return" />
   <input type="hidden" name="item_id" value="2" />
 <input type="submit" name="add" value="Add to Cart" />
 </fieldset>
-</form><p>
-<form method="post" action="https://ewebcart.com/3353/cart" accept-charset="utf-8">
+  </form></p>
+  <p><form method="post" action="https://ewebcart.com/3353/cart" accept-charset="utf-8">
 <fieldset style="border:0;margin:0;padding:0">
 Program<br />
 
